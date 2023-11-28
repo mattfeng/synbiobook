@@ -22,7 +22,7 @@ jobs:
         id: setup-python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.12'
       #----------------------------------------------
       #  -----  install & configure poetry  -----
       #----------------------------------------------
@@ -60,6 +60,6 @@ jobs:
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         with:
           publish_branch: gh-pages
-          github_token: ${{ secrets.PAT_GITHUB }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: _build/
           force_orphan: true
