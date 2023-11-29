@@ -1,4 +1,8 @@
+# The Synthetic Biology Book
 
+## TODO
 
-## References
+- [ ] Finding parts
+- [ ] Designing PCR primers
+- [ ] Designing CRISPR guide RNAs
 
